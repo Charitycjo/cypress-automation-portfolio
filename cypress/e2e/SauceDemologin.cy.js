@@ -20,7 +20,7 @@ describe("SauceDemo - Login Tests", () => {
     // Click Login
     cy.get(loginBtn).click();
 
-    // ✅ Assertion: check that user is redirected to inventory page
+    //  Assertion: check that user is redirected to inventory page
     cy.url().should("include", "/inventory.html");
     cy.contains("Products").should("be.visible");
   });
@@ -37,7 +37,7 @@ describe("SauceDemo - Login Tests", () => {
     // Click Login
     cy.get(loginBtn).click();
 
-    // ❌ Assertion: verify error message shows
+    //  Assertion: verify error message shows
     cy.get('[data-test="error"]').should("be.visible")
       .and("contain.text", "Epic sadface: Sorry, this user has been locked out.");
   });
