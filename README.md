@@ -10,8 +10,6 @@ This repository contains my Cypress automation scripts that test and validate th
   - Successful login with valid credentials
   - Failed login with invalid credentials
   - Error message validation for incorrect input
-  - Handling of locked-out users
-  - Required field checks for empty input
 
 ---
 
@@ -47,9 +45,6 @@ Validate the login functionality of the Sauce Demo e-commerce application by cov
 ### 4. Test Scenarios
 1. Login with valid username and password → Verify successful navigation to Products page.  
 2. Login with invalid password → Verify error message is displayed.  
-3. Login with locked-out user → Verify specific locked-out message.  
-4. Login with empty username/password → Verify required field error.  
-5. Login with special characters in username → Verify error handling.  
 
 ---
 
@@ -67,8 +62,7 @@ Validate the login functionality of the Sauce Demo e-commerce application by cov
 
 ### 6. Deliverables
 - Automated test scripts (Cypress)  
-- Test results report (via Cypress runner)  
-- Defect logs (if applicable)  
+
 
 ---
 
